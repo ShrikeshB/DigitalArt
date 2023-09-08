@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work | Portfolio</title>
+    <link rel="stylesheet" href="CSS/Scroll_animation.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/work.css">
+</head>
+
+<body>
+    <header>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img src="Images/LOGO icon.png" alt="">
+            </div>
+            <nav>
+                <div class="nav-items nav-active">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Work.html">My Work</a></li>
+                        <li><a href="About.html">About me</a></li>
+                        <li><a href="Contact.html">Contact me</a></li>
+                    </ul>
+                </div>
+
+                <div class="burger" onclick="burger_click()">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <div class="text">
+                <p>PORTFOLIO</p>
+            </div>
+
+            <a href="#" class="button"><span>LET'S START</span></a>
+
+        </div>
+
+    </section>
+
+    <section class="section-1">
+        <div class="head js-scroll scrolled fade-in">
+            <div class="content">
+                <p>LANDSCAPE</p>
+                <div class="under-line">
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="r-btn" id="r1">
+                <input type="radio" name="r-btn" id="r2">
+                <input type="radio" name="r-btn" id="r3">
+                <input type="radio" name="r-btn" id="r4">
+
+                <div class="slide first">
+                    <img src="Images/a1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Images/a2.jpg" alt="">
+                </div>
+
+                <div class="slide ">
+                    <img src="Images/a3.jpg" alt="">
+                </div>
+
+                <div class="slide ">
+                    <img src="Images/a4.jpg" alt="">
+                </div>
+
+                <!-- auto -->
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <!-- manual -->
+            <div class="nav-manual">
+                <div class="lables">
+
+                </div>
+                <label for="r1" class="manual-btn"></label>
+                <label for="r2" class="manual-btn"></label>
+                <label for="r3" class="manual-btn"></label>
+                <label for="r4" class="manual-btn"></label>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="overlay">
+        <pre>MY WORK</pre>
+    </div>
+
+    <div class="section-2">
+        <h1>CHARACTER DESIGN</h1>
+        <div class="img-grid">
+            <div class="img-container">
+                <div class="image js-scroll scrolled popUp">
+                    <img src="Images/1.jpg" alt="">
+
+                </div>
+                <div class="image js-scroll scrolled popUp">
+                    <img src="Images/3.jpg" alt="">
+
+                </div>
+                <div class="image js-scroll scrolled popUp">
+                    <img src="Images/2.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="end-credit">
+        <p>LET'S GET STARTED!</p>
+        <center><a href="#" class="button js-scroll scrolled popUp"><span>LET'S START</span></a>
+        </center>
+    </div>
+    <footer>
+        <div class="main-content">
+            <div class="left">
+                <h1>LOGO</h1>
+                <div class="follow-me">
+                    <div class="img-container">
+                        <img src="Images/instagram.png" alt="">
+                        <img src="Images/facebook.png" alt="">
+                        <img src="Images/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="services">
+                    <ul>
+                        <li style="font-size: 20px;">SERVICES</li>
+                        <li>DIGITAL ART</li>
+                        <li>LOGO DESIGN</li>
+                        <li>UI/UX DESIGN</li>
+                        <li>SUPPORT</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li style="font-size: 20px;">LINKS</li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">CONTACT ME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end-content">
+            <p>all right reserved</p>
+            <p>ENGLISH</p>
+        </div>
+    </footer>
+</body>
+<script>
+    var counter = 1;
+    setInterval(function () {
+        document.getElementById("r" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+            counter = 1;
+        }
+    }, 3000);
+</script>
+<script src="JS/Logic.js"></script>
+
+</html>
